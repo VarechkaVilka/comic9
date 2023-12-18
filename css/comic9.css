@@ -1,0 +1,308 @@
+.comic-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    border: 3px solid rgb(91, 126, 253);
+    font-family: 'Shantell Sans', sans-serif;
+}
+
+.comic__item {
+    width: 50%;
+    height: 300px;
+    border: 3px solid rgb(91, 126, 253);
+    position: relative;
+}
+
+.comic__img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.cloud-img {
+    width: 100%;
+}
+
+/*---------------облачка--------------*/
+
+.comic__item1 .cloud1 { /*----1----*/
+    position: absolute;
+    width: 200px;
+    top: -30px;
+    left: -20px;
+}
+
+.comic__item2 .cloud1 { /*----2-----*/
+    position: absolute;
+    width: 55%;
+    top: 110px;
+    left: 230px;
+}
+
+.comic__item2 .cloud-img1 {
+    transform: scaleY(-1);
+}
+
+.comic__item3 .cloud1 { /*---------3-------*/
+    position: absolute;
+    width: 230px;
+    top: -50px;
+    left: 260px;
+}
+
+
+.comic__item4 .cloud1 { /*---4-----*/
+    position: absolute;
+    width: 230px;
+    top: 115px;
+    left: 230px;
+}
+
+.comic__item4 .cloud-img1 {
+    transform: scaleY(-1);
+}
+
+.comic__item5 .cloud1 { /*---------5----*/
+    position: absolute;
+    width: 200px;
+    top: -40px;
+    left: -15px;
+}
+
+.comic__item5 .cloud-img1 {
+    transform: scaleX(-1);
+}
+
+.comic__item5 .cloud2 {
+    position: absolute;
+    width: 280px;
+    right: -25px;
+    bottom: 70px;
+
+}
+
+.comic__item6 .cloud1 { /*-------------6------------*/
+    position: absolute;
+    width: 300px;
+    top: -45px;
+    right: -10px;
+   
+}
+
+.comic__item6 .cloud2 {
+    position: absolute;
+    width: 270px;
+    top: 55px;
+    right: 250px;
+}
+
+.comic__item6 .cloud-img2 {
+    transform: scaleX(-1);
+}
+
+
+
+/*----------------текст---------------*/
+
+.comic__item1 .text1 {
+    position: absolute;
+    top: 80px;
+    right: 45px;
+    font-size: 18px;
+
+}
+
+.comic__item2 .text1 {
+    position: absolute;
+    top: 130px;
+    right: 35px;
+    font-size: 18px;
+
+}
+.comic__item3  .text1 {
+    position: absolute;
+    top: 106px;
+    right: 60px;
+    font-size: 18px;
+}
+
+.comic__item4 .text1 {
+    position: absolute;
+    top: 106px;
+    right: 48px;
+    font-size: 18px;
+
+}
+
+.comic__item5 .text1 {
+    position: absolute;
+    top: 90px;
+    right: 65px;
+    font-size: 18px;
+
+}
+
+.comic__item5 .text2 {
+    position: absolute;
+    left: 70px;
+    bottom: 105px;
+    font-size: 16px;
+    padding:  0 7px;
+
+}
+
+.comic__item6 .text1 {
+    position: absolute;
+    top: 115px;
+    right: 40px;
+    font-size: 18px;
+    left: 100px;
+}
+.comic__item6 .text2 {
+    position: absolute;
+    top: 100px;
+    right: 80px;
+    font-size: 18px;
+    left: 85px;
+}
+
+
+/*----------адаптивность----------------*/
+@media(max-width:900px) {
+    .comic__item {
+        width: 100%;
+    }
+}
+    
+
+@media(max-width:500px) {
+    /*----1----*/
+    .comic__item1 .cloud1 { 
+        width:40%;
+        top: -20px;
+        left: -20px;
+    }
+
+    .comic__item1 .text1 {
+        position: absolute;
+        top: 55px;
+        right: 40px;
+        font-size: 10px;
+    
+    }
+
+    /*-------2-----*/
+    .comic__item2 .cloud1 { 
+        width: 40%;
+        top: 150px;
+        left: 170px;
+    }
+    
+    .comic__item2 .cloud-img1 {
+        transform: scaleY(-1);
+    }
+
+    .comic__item2 .text1 {
+        position: absolute;
+        top: 62px;
+        right: 15px;
+        font-size: 9px;
+    
+    }
+
+    /*---------3-------*/
+    .comic__item3 .cloud1 { 
+        width: 40%;
+        top: 20px;
+        left: 220px;
+    }
+
+    .comic__item3  .text1 {
+        position: absolute;
+        top: 60px;
+        right: 40px;
+        font-size: 10px;
+    }
+
+    /*----------4----------*/
+    .comic__item4 .cloud1 { 
+        width: 40%;
+        top: 115px;
+        left: 200px;
+    }
+    
+    .comic__item4 .cloud-img1 {
+        transform: scaleY(-1);
+    }
+
+    .comic__item4 .text1 {
+        position: absolute;
+        top: 60px;
+        right: 30px;
+        font-size: 10px;
+    
+    }
+
+    /*----5----*/
+    .comic__item5 .cloud1 {
+        width: 40%;
+        top: 100px;
+        left: 0;
+
+    }
+
+    .comic__item5 .cloud2 {
+        position: absolute;
+        width: 40%;
+        right: 20px;
+        bottom: 100px;
+    }
+
+    .comic__item5 .text1 {
+        position: absolute;
+        top: 60px;
+        right: 53px;
+        font-size: 10px;
+    
+    }
+    
+    .comic__item5 .text2 {
+        position: absolute;
+        left: 29px;
+        bottom: 60px;
+        font-size: 8px;
+        padding:  0 7px;
+    
+    }
+
+    /*-------------6------------*/
+    .comic__item6 .cloud1 { 
+        width: 40%;
+        top: -20px;
+        right: -10px;
+       
+    }
+    
+    .comic__item6 .cloud2 {
+        width: 45%;
+        top: 180px;
+        right: 210px;
+    }
+
+    .comic__item6 .cloud-img2{
+        transform: scale(-1);
+    }
+
+    .comic__item6 .text1 {
+        position: absolute;
+        top: 55px;
+        font-size: 8px;
+        left: 40px;
+    }
+    .comic__item6 .text2 {
+        position: absolute;
+        top: 50px;
+        font-size: 10px;
+        left: 60px;
+    }
+}
+
